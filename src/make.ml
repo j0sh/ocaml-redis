@@ -29,7 +29,7 @@ module type IO = sig
   val output_string        : out_channel -> string -> unit t
   val flush                : out_channel -> unit t
 
-  (* Lwt_util stuff *)
+  (* Lwt_list stuff *)
   val iter : ('a -> unit t) -> 'a list -> unit t
   val iter_serial : ('a -> unit t) -> 'a list -> unit t
   val map : ('a -> 'b t) -> 'a list -> 'b list t
