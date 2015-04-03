@@ -26,4 +26,4 @@ Library redis_lwt
   Findlibname: lwt
   FindlibParent: redis
   Modules: Redis_lwt
-  BuildDepends: lwt.unix, lwt, redis
+  BuildDepends: lwt.unix, lwt (>= 2.4.4), redis
